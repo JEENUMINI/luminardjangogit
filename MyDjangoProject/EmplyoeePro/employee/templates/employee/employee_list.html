@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for employee in employees%}
+EmployeeName:{{employee.employee_name}},
+Age:{{employee.age}},
+Salary:{{employee.salary}},
+Designation:{{employee.designation}}
+<a href="{%url 'edit' employee.id%}">Edit</a>
+<a href="{%url 'details' employee.id%}">View</a>
+<a href="{%url 'delete' employee.id%}">Delete</a>
+<hr>
+{% endfor %}
+</body>
+</html>

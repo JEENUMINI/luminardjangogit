@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task html</title>
+</head>
+<body>
+<form action="{%url 'taskgetdetails' %}" method="post">
+    {% csrf_token %}
+    <table>
+<tr>
+    <td><input type="text" class="form-control" name="num1"></td>
+</tr>
+<tr>
+    <td><input type="text"  class="form-control" name="num2"></td>
+</tr>
+        <tr>
+            <td><input type="submit" value="add"></td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

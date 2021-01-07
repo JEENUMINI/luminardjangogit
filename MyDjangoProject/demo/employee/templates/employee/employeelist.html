@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for data in employee%}
+employeename:{{data.employeename}},
+age:{{data.age}},
+salary:{{data.salary}},
+designation:{{data.designation}}
+<hr>
+{% endfor %}
+</body>
+</html>
